@@ -5,6 +5,7 @@ setfont /usr/share/kbd/consolefonts/LatGrkCyr-12x22.psfu.gz    #设置字体
 keycode 1 = Caps_Lock		#keycode 1 是esc键，即将Caps_Lock键映射为esc  
 keycode 58 = Escape  
 (https://blog.csdn.net/whsbk/article/details/79827680)  
+showkey
 keycode 58 = Control  
 keycode 100 = Caps_Lock  
 #保存退出  
@@ -98,7 +99,7 @@ grub-install --target=你的架构-efi --efi-directory=/boot
 #完！  
 #可以通过pacman -S去安装软件  
   
-pacman -S neovim zsh wpa_supplicant dhcpcd  
+pacman -S neovim zsh wpa_supplicant dhcpcd wireless_tools
 wpa_supplicant dhcpcd		#上网用的，能上网，其他的都能上网安装，上面也有用到这两个  
   
 #完！！  

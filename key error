@@ -32,3 +32,7 @@ raw.githubusercontent.com
 # GitHub End
 
 dwm patches alpha pacman -S xcompmgr
+
+fcitx5-rime-git
+
+/usr/share/rime-data/default.yaml

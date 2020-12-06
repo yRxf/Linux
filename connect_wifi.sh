@@ -10,7 +10,7 @@ function check_wifi {
       if [[ $(ps -elf | grep dhcpcd | wc -l) > 1 ]];then
         sudo killall dhcpcd
       fi
-      sleep 2
+      sleep 1
     fi
    sudo wpa_supplicant -c $1 -i wlp3s0 &
   else
@@ -31,7 +31,7 @@ else
       if [[ $(ps -elf | grep dhcpcd | wc -l) > 1 ]];then
         sudo killall dhcpcd
       fi
-      sleep 2
+      sleep 1
     fi
 	  wpa_passphrase $1 $2 > res_internet.conf
 	  sleep 1

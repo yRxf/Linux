@@ -17,6 +17,6 @@ bash ~/connect_wifi.sh $1 $2
 #if [[ $(xrandr -q | grep "HDMI1 connected") ]];then
 #  xrandr --output HDMI1 --auto
 #fi
-sleep 2
+sleep 1
 startx
 # sh -c "st -ie bash buletooth_key.sh"
